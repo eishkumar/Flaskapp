@@ -1,0 +1,12 @@
+import sqlite3 as sql
+a=input('Username')
+con=sql.connect("database2.db")
+cur=con.cursor()
+    # cur.execute("DELETE FROM users6 WHERE password=444")
+    # users6 = cur.fetchall()
+    # con.close()
+cursor=con.execute("DELETE FROM users6 WHERE Username = '%s';"% a.strip())
+    #print(next(cursor))
+    # cur.execute('delete from users6 where password=' + a )
+con.commit()
+con.close()

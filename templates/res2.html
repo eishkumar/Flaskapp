@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+	<div class="box">  
+	        <h1>delete</h1>
+	        <form action="/" method="post">
+	          <br>
+	          <input type="text" name="username" id="username" placeholder="Username" required/>
+	          <br>
+	  
+	          <input type="submit" class="button" value="delete" />
+	          <br>
+	         </form> 
+	      </div>   
+
+</body>
+</html>> -->
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<form action="{{ url_for('handle_data') }}" method="post">
+    <input type="text" name="projectFilepath">
+    <input type="submit">
+	</form>   
+</body>
+</html>
+
